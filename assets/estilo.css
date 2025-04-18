@@ -350,8 +350,7 @@ footer .line-footer p a{
     }
 
     .content .logo-home  a img{
-        width: 90%;
-        height: 40px;
+        display: none;
     }
 
    .one,
