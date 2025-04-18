@@ -5,7 +5,7 @@
 
     setTimeout(() => {
         window.open('public/curso-para fazer uma exposição.pdf', '_blank');
-    }, 700)
+    }, 2000)
   }
 
   let show = true;
