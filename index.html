@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="assets/estilo.css">
 
 <!--BOOTSTRAP ICONS-->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -12,32 +12,41 @@
     <title>Moraes Decora</title>
 </head>
 <body>
-    <header>
+    <header id="topo-site" class="content">
         <div class="interface">
-            <div class="logo">
-                <a href="#"></a>
-                    <img src="logo inicipo.png" alt="#" width="60" height="60"> 
+            <div class="logo-home">
+                <a href="#topo">
+                    <img src="public/logo inicipo.png" alt="#" width="60" height="60"> 
                 </a>
             </div><!--logo-->
             <nav class="menu-desktop">
-                    <ul>
-                        <li><a href="#">inicio</a></li>
-                        <li><a href="#">especialidades</a></li>
-                        <li><a href="#">projetos</a></li>
-                        <li><a href="#">sobre</a></li>
+                    <ul class="list-menu">
+                        <li><a href="#topo">Início</a></li>
+                        <li><a style="cursor: pointer;" onclick="abrirPDFs()">Certificados</a></li>
+                        <li><a href="public/Portfólio MoraesDecora.pdf" target="_blank">Projetos</a></li>
+                        <li><a href="http://lattes.cnpq.br/3220358301004481" target="_blank">Currículo</a></li>
+                        <li><a href="#about_me">Sobre</a></li>
                     </ul>
             </nav>
 
+            <div class="menu-toggle">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+
             <div class="btn-contato">
-                <a href="#">
+                <a href="#footer">
                     <button>contato</button>
                 </a>
             </div><!--btn-contato-->
         </div><!--interface-->
+
+        
     </header>
 
     <main>
-        <section class="topo-do-site">
+        <section class="topo-do-site" id="topo-site">
             <div class="interface">
                 <div class="flex">
                     <div class="txt-topo-site">
@@ -48,14 +57,14 @@
                         </p>
 
                              <div class="btn-contato">
-                                <a href="#">
+                                <a href="#form">
                                     <button>Entre em contato</button>
                                 </a>
                              </div>
                         </div><!--txt-topo-site-->
 
                          <div class="img-topo-site">
-                            <img src="mari.jpeg" alt="" width="300" height="">
+                            <img src="public/mari.jpeg" alt="" width="300" height="">
                          </div> <!--img-topo-site-->
                         </div><!--topo-do-site-->
                 </div><!--flex-->
@@ -86,11 +95,11 @@
                 </div><!--flex-->
             </div><!--interface-->
         </section><!--especialidades-->
-        <section class="sobre">
+        <section class="sobre" id="about_me">
             <div class="interface">
                 <div class="flex">
                     <div class="img-sobre">
-                        <img src="mor.jpeg" alt="" width="300" >
+                        <img src="public/mor.jpeg" alt="" width="300" >
                     </div><!--img-sobre-->
                     <div class="txt-sobre">
                         <h2>MUITO PRAZER, <span>SOU MARIANA MORAES.</span></h2>
@@ -99,14 +108,17 @@
                     <p>Minha abordagem no design é personalizada, ouvindo atentamente as necessidades e desejos de meus clientes para criar soluções que atendem às suas expectativas, sem perder a essência de cada projeto. 
                         Seja em residências, escritórios ou espaços comerciais, me dedico a cada detalhe, desde a escolha de cores e texturas até a disposição dos móveis, para criar ambientes que refletem a personalidade de quem os habita.</p>
                         <div class="btn-social">
-                            <a href="https://www.instagram.com/moraesdecora/?igsh=MW5oc3Awa3p3ank5aA%3D%3D&utm_source=qr#" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
-                            <a href="https://www.linkedin.com/in/mariana-de-moraes-freire-b24714357?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
+                            <a title="Instagram" href="https://www.instagram.com/moraesdecora/?igsh=MW5oc3Awa3p3ank5aA%3D%3D&utm_source=qr#" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
+                            <a title="LinkeIn" href="https://www.linkedin.com/in/mariana-de-moraes-freire-b24714357?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
+                            <a title="Certificado"><button onclick="abrirPDFs()"><i class="bi bi-card-heading"></i></button></a>
+                            <a title="Curriculo" href="http://lattes.cnpq.br/3220358301004481" target="_blank"><button><i class="bi bi-file-earmark-font"></i></button></a>
                             
                     </div><!--txt-sobre-->
                 </div><!--flex-->
             </div><!--interface-->
+           
         </section><!--sobre-->
-        <section class="formulario">
+        <section class="formulario" id="form">
             <div class="interface">
                 <h2 class="titulo">FALE <span>COMIGO.</span></h2>
 
@@ -121,12 +133,12 @@
         </section><!--formulario-->
     </main>
 
-    <footer>
+    <footer id="footer">
         <div class="interface">
             <div class="line-footer">
                 <div class="flex">
-                <div class="logo-footer">
-                    <img src="logo inicipo.png" alt=""width="60" height="60">
+                <div class="logo-home">
+                    <a href="#topo-site"><img src="public/logo inicipo.png" alt=""width="60" height="60"></a>
                 </div><!--"logo-footer"-->
                     <div class="btn-social">
                         <a href="https://www.instagram.com/moraesdecora/?igsh=MW5oc3Awa3p3ank5aA%3D%3D&utm_source=qr#" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
@@ -140,5 +152,7 @@
             </div><!--line-footer-->
         </div><!--interface-->
     </footer>
+
+    <script src="assets/script.js"></script>
 </body>
 </html>
