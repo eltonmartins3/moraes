@@ -336,12 +336,18 @@ footer .line-footer p a{
 
 @media(max-width: 768px){
 
+    .topo-do-site {
+        margin-top: 40px;
+    }
+
     .content {
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         color: white;
+        background-color: #B99470;
+        height: 75px;
         z-index: 9;
         margin-top: 0;
         margin-left: 0;
