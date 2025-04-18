@@ -1,11 +1,6 @@
   function abrirPDFs() {
-    setTimeout(() => {
-        window.open('public/acessibilidade em museus.pdf', '_blank');
-    }, 0)
-
-    setTimeout(() => {
-        window.open('public/curso-para fazer uma exposição.pdf', '_blank');
-    }, 2000)
+        window.open('/acessibilidade em museus.pdf', '_blank');
+        window.open('/curso-para fazer uma exposição.pdf', '_blank');
   }
 
   let show = true;
