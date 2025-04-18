@@ -1,9 +1,13 @@
   function abrirPDFs() {
         window.open('public/acessibilidade-em-museus.pdf', '_blank');
         setTimeout(() => {
-          alert("Clique OK para abrir o segundo certificado.")
-          window.open('public/curso-para-fazer-uma-exposição.pdf', '_blank');
-        }, 2000)
+          document.getElementById('modal').style.display = 'block';
+        }, 1000);
+  }
+
+  function abrirSegundoPDF() {
+    window.open('public/curso-para-fazer-uma-exposicão.pdf', '_blank');
+    document.getElementById('modal').style.display = 'none';
   }
 
   let show = true;
