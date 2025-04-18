@@ -46,6 +46,10 @@ h2.titulo span{
     color: #5F6F52;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* estilo do cabeçalho */
 header{
     padding: 40px 4%;
@@ -257,6 +261,16 @@ footer .line-footer p i{
 footer .line-footer p a{
     color: #ffffff;
 
+}
+
+.logo-footer{
+    transition: 0.5s;
+}
+
+.logo-footer:hover{
+    box-shadow: 0px 0px 8px color #5F6F52;
+    transform: scale(1.15);
+    
 }
 
 @media screen and (max-width:1020px){
