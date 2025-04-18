@@ -1,6 +1,6 @@
   function abrirPDFs() {
-        window.open('/acessibilidade-em-museus.pdf', '_blank');
-        window.open('/curso-para-fazer-uma-exposição.pdf', '_blank');
+        window.open('public/acessibilidade-em-museus.pdf', '_blank');
+        window.open('public/curso-para-fazer-uma-exposição.pdf', '_blank');
   }
 
   let show = true;
